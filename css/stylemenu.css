@@ -1,0 +1,198 @@
+/*------------------------------------------------------------------*/
+/*---------------Responsive Web Design - Mobile First--------------*/
+
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #dbc4a6;
+    font-family:'Dosis', sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3636;
+    align-items: center;
+}
+.img-header{
+    width: 50%;
+    height: 50%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto-logo{
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ffbd59;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: #ffbd59 ;
+    font-weight: 350;
+    font-size: x-large;
+    margin-right: 5px;
+    margin-left: 5px
+}
+a:hover{
+    color: black;
+}
+/*------------------- M E N U ------------------*/
+menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Comidas_caseras{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.CC_text{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    padding: 2px;
+}
+
+.cc{
+        size: 150px 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;   
+} 
+
+ul ul{
+    list-style-type: none;
+    list-style-position: outside;
+}
+/*---------------------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffbd59;
+    align-items: center;
+    color:  #3b3636;
+    font-size:larger;
+ }
+        
+footer a{
+    color:  #3b3636;
+    justify-content: space-between;
+}
+footer .ubicacion .a-ub{
+    text-decoration: underline;
+ }
+ footer .ubicacion .a-ub:hover{
+    text-decoration: none;
+    
+ }
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+/*-----------------------------------------------------*/
+/*-------------------T A B L E T (810x1080)------------*/
+@media(min-width:810px){
+   
+    header{
+        display: flex;
+        height: 150px;
+        flex-direction: row;
+        background-color: #3b3636;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        flex-direction: row;
+        justify-content: left;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    a{
+        margin-right: 15px;
+        margin-left: 15px
+    }
+    .img-header{
+        width: 25%;
+        height: 25%;
+    }
+
+    /*----------------------Menu-----------------*/
+    menu{
+        height: 800px;
+    }
+    .Comidas_caseras{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    
+    }
+    .Pasteleria{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+    .CC_text{
+        font-size: 48px;
+    font-family: 'Dancing Script', cursive;
+    padding: 2px;
+    }
+   .cc{
+    size: 160px 160px;
+    margin-right: 30px ;
+    margin-left: 30px;
+   }
+ /*----------------------------------------------*/
+   footer{
+    height: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .redes{
+    margin-left: 5px;
+   }
+   .copy{
+    margin-right: 5px;
+   }
+}
+/*-----------------------------------------------------*/
+/*-------------------Pantalla Notebook-----(1360*1100)---------*/
+
+
+@media(min-width:1000px){
+
+    .img-header{
+        height: 150px;
+        width: 150px;
+    }
+    a{
+        margin-right: 25px;
+        margin-left: 25px
+
+}
